@@ -1,0 +1,169 @@
+@keyframes fall{
+    0%{
+        top: 0px;
+    }
+    25%{
+     top: 125px;
+    }
+    50%{
+  top: 250px;
+    }
+    75%{
+   top:375px
+    }
+    100%{
+        top: 500px;
+    }
+
+}
+@keyframes fall2{
+    0%{
+        top: 0px;
+    }
+    25%{
+     top: 125px;
+    }
+    50%{
+  top: 250px;
+    }
+    75%{
+   top:375px
+    }
+    100%{
+        top: 500px;
+    }
+
+}
+@keyframes fall3{
+    0%{
+        top: 0px;
+    }
+    25%{
+     top: 125px;
+    }
+    50%{
+  top: 250px;
+    }
+    75%{
+   top:375px
+    }
+    100%{
+        top: 500px;
+    }
+
+}
+@keyframes bullet{
+    0%{
+        top: 380px;
+    }
+   
+    100%{
+        top: 0px;
+    }
+}
+
+#board{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid black;
+   margin: auto; 
+   overflow: hidden;
+    
+
+    
+}
+#gun{
+    width: 50px;
+    top:380px;
+    height: 30px;
+    left:100px;
+    background-image: url("bullet.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position-x: center; 
+    background-position-y: bottom;
+    position: absolute;
+    animation-name: bullet;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    /* animation-delay: 2s; */
+}
+    
+#square1{
+    width: 50px;
+    top:0px;
+    height: 50px;
+    background-image: url("alien.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-position-y: bottom;
+    position: absolute;
+    animation-name: fall;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+}
+#square2{
+    width: 50px;
+    top:0px;
+    height: 50px;
+    background-image: url("alien.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    position: absolute;
+    animation-name: fall2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    
+
+}
+#square3{
+    width: 50px;
+    top:0px;
+    height: 50px;
+    background-image: url("alien.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    position: absolute;
+    animation-name: fall3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+
+}
+
+#hero{
+    width: 50px;
+    
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    background-image: url("rocket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.b1{
+   height: 20px;
+    width: 10pxx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    gap: 20px;
+    /* background-colorblack; */
+}
